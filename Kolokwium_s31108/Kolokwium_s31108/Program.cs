@@ -1,3 +1,5 @@
+using Kolokwium_s31108.Services;
+
 namespace Kolokwium_s31108;
 
 public class Program
@@ -8,7 +10,7 @@ public class Program
 
 // Add services to the container.
         builder.Services.AddControllers();
-        builder.Services.AddScoped<IDbService, DbService>();
+        builder.Services.AddScoped<IDbServices, DbServices>();
         
         var app = builder.Build();
 
